@@ -10,7 +10,7 @@ const App = () => {
     const [places, setPlaces] = useState([]);
 
     const [coordinates, setCoordinates] = useState({});
-    const [bounds, setBounds] = useState(null);
+    const [bounds, setBounds] = useState({});
 
     //as soon as the page loads, we set the geolocation to the users, using built in geolocator
     useEffect(() => {
