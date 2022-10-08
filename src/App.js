@@ -17,7 +17,8 @@ const App = () => {
     const [isLoading, setIsLoading] = useState(false);
     const [type, setType] = useState('restaurants');
     const [rating, setRating] = useState('');
-
+    const [filter, setFilter] = useState()
+''
     //as soon as the page loads, we set the geolocation to the users, using built in geolocator
     useEffect(() => {
         navigator.geolocation.getCurrentPosition(({ coords: {latitude, longitude} }) => {
